@@ -1,7 +1,7 @@
 Attribute VB_Name = "Módulo2"
 Function salariocomimposto(qtd_normal As Double, qtd_extra As Double, preco_normal As Double, preco_extra As Double) As Double
 
-'Cria fórmula para calcular os salários dos funcionários
+'Fórmula criada para calcular os salários dos funcionários
 
 salario = qtd_normal * preco_normal + qtd_extra * preco_extra
 
@@ -23,6 +23,12 @@ End If
 
 End Function
 Sub compilar_salarios()
+
+'Recursos de otimização da macro
+
+Application.ScreenUpdating = False
+
+Application.Calculation = xlCalculationManual
 
 'Declara as variáveis
 
@@ -66,9 +72,19 @@ Sheets("Exemplo Funcionários").Activate
 
 'Volta para a aba principal
 
+Application.Calculation = xlCalculationAutomatic
+
+Application.ScreenUpdating = True
+
 End Sub
 
 Sub limpar_abas()
+
+'Recursos de otimização da macro
+
+Application.ScreenUpdating = False
+
+Application.Calculation = xlCalculationManual
 
 For Each aba In ThisWorkbook.Sheets
 
@@ -95,6 +111,10 @@ Next
 Sheets("Exemplo Funcionários").Activate
 
 'Volta para a aba principal
+
+Application.Calculation = xlCalculationAutomatic
+
+Application.ScreenUpdating = True
 
 End Sub
 
