@@ -1,3 +1,3 @@
-# Compilacao de Planilhas - Exemplo Salários
+# Compilação de Planilhas - Exemplo Salários
 
  VBA
