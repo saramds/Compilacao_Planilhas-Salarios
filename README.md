@@ -16,4 +16,4 @@ Renda acima de R$18.000: 12,5%
 
 Antes de começar o processo, o usuário pode excluir os dados antigos clicando no botão 'Limpar Base', que aciona a macro 'limpar_abas'.
 
-Vídeo do código em funcionamento:
+Vídeo do código em funcionamento: https://youtu.be/oAFKPX9qM54
