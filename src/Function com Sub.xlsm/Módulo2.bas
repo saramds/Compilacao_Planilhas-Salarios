@@ -1,11 +1,11 @@
-Attribute VB_Name = "MÛdulo2"
+Attribute VB_Name = "M√≥dulo2"
 Function salariocomimposto(qtd_normal As Double, qtd_extra As Double, preco_normal As Double, preco_extra As Double) As Double
 
-'FÛrmula criada para calcular os sal·rios dos funcion·rios
+'F√≥rmula criada para calcular os sal√°rios dos funcion√°rios
 
 salario = qtd_normal * preco_normal + qtd_extra * preco_extra
 
-'CondiÁıes de acrÈscimo do imposto
+'Condi√ß√µes de acr√©scimo do imposto
 
 If salario <= 12000 Then
 
@@ -24,13 +24,13 @@ End If
 End Function
 Sub compilar_salarios()
 
-'Recursos de otimizaÁ„o da macro
+'Recursos de otimiza√ß√£o da macro
 
 Application.ScreenUpdating = False
 
 Application.Calculation = xlCalculationManual
 
-'Declara as vari·veis
+'Declara as vari√°veis
 
 Dim valor_normal As Double
 
@@ -38,7 +38,7 @@ Dim valor_extra As Double
 
 'Seleciona a aba principal
 
-Sheets("Exemplo Funcion·rios").Activate
+Sheets("Exemplo Funcion√°rios").Activate
 
 'Descobre os valores da hora normal e da hora extra
 
@@ -48,9 +48,9 @@ valor_extra = Range("H7").Value
 
 For Each aba In ThisWorkbook.Sheets
 
-'Faz o c·lculo do sal·rio para as abas dos setores da empresa
+'Faz o c√°lculo do sal√°rio para as abas dos setores da empresa
 
-    If aba.name <> "Exemplo Funcion·rios" Then
+    If aba.name <> "Exemplo Funcion√°rios" Then
     
         aba.Activate
         
@@ -68,9 +68,9 @@ For Each aba In ThisWorkbook.Sheets
 
 Next
 
-Sheets("Exemplo Funcion·rios").Activate
-
 'Volta para a aba principal
+
+Sheets("Exemplo Funcion√°rios").Activate
 
 Application.Calculation = xlCalculationAutomatic
 
@@ -80,7 +80,7 @@ End Sub
 
 Sub limpar_abas()
 
-'Recursos de otimizaÁ„o da macro
+'Recursos de otimiza√ß√£o da macro
 
 Application.ScreenUpdating = False
 
@@ -88,9 +88,9 @@ Application.Calculation = xlCalculationManual
 
 For Each aba In ThisWorkbook.Sheets
 
-'Limpas as informaÁıes antigas das abas dos setores da empresa
+'Limpa as informa√ß√µes antigas das abas dos setores da empresa
 
-    If aba.name <> "Exemplo Funcion·rios" Then
+    If aba.name <> "Exemplo Funcion√°rios" Then
     
         aba.Activate
         
@@ -108,9 +108,9 @@ For Each aba In ThisWorkbook.Sheets
 
 Next
 
-Sheets("Exemplo Funcion·rios").Activate
-
 'Volta para a aba principal
+
+Sheets("Exemplo Funcion√°rios").Activate
 
 Application.Calculation = xlCalculationAutomatic
 
